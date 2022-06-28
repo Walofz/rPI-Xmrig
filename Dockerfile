@@ -29,7 +29,7 @@ LABEL owner="Doyalin"
 LABEL maintainer="whoami@lazy.dev"
 
 ENV WALLET=42zKbqEMHwA1FaHfsoVAP3JyQKDfd4PYEfAnjKvJrzTqEYjQqeFw62uAgNqY81SHogaUn4sTrVgTFZEGbdU5Xc39SubJXWr
-ENV POOL=gulf.moneroocean.stream:10001
+ENV POOL=gulf.moneroocean.stream:10128
 ENV PASS=doyalin
 ENV DONATE=0
 ENV COIN=monero
