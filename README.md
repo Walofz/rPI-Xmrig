@@ -1,6 +1,11 @@
 # rPI-Xmrig
 **Base** on [Xmrig](https://github.com/xmrig/xmrig) modify to docker.
 
+The images is based on Alpine in a docker, recommed using for raspberry pi 4.
+
+- Note: To make the container mining for **your wallet**, you'll need to have a monero wallet (see https://mymonero.com/) and follow instructions. Then change options for the container as explained in the following section
+- Note: this is a CPU version of Xmrig, nvidia version will be proposed later, but that's a bit more complex
+
 # Docker Image
 ```bash
 docker pull walofz/xmrigrpi:6.18.0
@@ -9,11 +14,6 @@ docker pull walofz/xmrigrpi:6.18.0
 ```bash
 docker run -d --name miner walofz/xmrigrpi:6.18.0
 ```
-
-The images is based on Alpine in a docker, recommed using for raspberry pi 4.
-
-- Note: To make the container mining for **your wallet**, you'll need to have a monero wallet (see https://mymonero.com/) and follow instructions. Then change options for the container as explained in the following section
-- Note: this is a CPU version of Xmrig, nvidia version will be proposed later, but that's a bit more complex
 
 # Setup in Dockerfile
 
