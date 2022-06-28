@@ -21,7 +21,7 @@ docker pull walofz/xmrigrpi:6.18.0-arm64
 
 **Using**
 ```bash
-docker run -d --name miner walofz/xmrigrpi:6.18.0
+docker run -d --name miner walofz/xmrigrpi:6.18.0-{amd64 or arm64}
 ```
 
 # Setup in Dockerfile
