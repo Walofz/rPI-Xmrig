@@ -5,7 +5,7 @@ The images is based on Alpine in a docker, recommed using for raspberry pi 4.
 
 - Note: To make the container mining for **your wallet**, you'll need to have a monero wallet (see https://mymonero.com/) and follow instructions. Then change options for the container as explained in the following section
 - Note: this is a CPU version of Xmrig
-- Note: For Raspberry PI 4 using `arm64` image or build from source.
+- Note: For Raspberry PI 4 using `arm64` or build from source.
 - Note: For Linux 64 Bit (or WSL2) using `amd64` or build from source.
 - Note: Docker Image is build-in my wallet, if you want help me. Just use it ~ (XD)
 
