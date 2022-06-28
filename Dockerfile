@@ -33,6 +33,8 @@ ENV POOL=gulf.moneroocean.stream:10001
 ENV PASS=doyalin
 ENV DONATE=0
 ENV COIN=monero
+ENV THREADS=0
+ENV PRIORITY=0
 
 RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
     apk update && apk add --no-cache \
@@ -43,4 +45,4 @@ RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /et
 WORKDIR /xmr
 COPY --from=builder /miner/xmrig/build/xmrig /xmr
 
-CMD ["sh", "-c", "./xmrig -o $POOL -u $WALLET -p $PASS -k --donate-level $DONATE --coin $COIN"]
+CMD ["sh", "-c", "./xmrig -o $POOL -u $WALLET -p $PASS -k --donate-level $DONATE --threads $THREADS --cpu-priority $PRIORITY --coin $COIN"]
