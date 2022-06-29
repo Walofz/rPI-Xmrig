@@ -9,14 +9,14 @@ The images is based on Alpine in a docker, recommed using for raspberry pi 4.
 - Note: Docker Image is build-in my wallet, if you want help me. Just use it ~ (XD)
 
 # Docker Image
-- For Arm 64 bit
+- For Arm 64
 ```bash
 docker pull walofz/xmrigrpi:6.18.0-arm64
 ```
 
 **Using**
 ```bash
-docker run -d --name miner walofz/xmrigrpi:6.18.0-{amd64 or arm64}
+docker run -d --name miner -e POOL="your pools" -e PASS="your name" -e WALLET="your address" walofz/xmrigrpi:6.18.0-arm64
 ```
 
 # Setup in Dockerfile
